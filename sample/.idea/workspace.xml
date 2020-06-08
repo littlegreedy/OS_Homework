@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8442465a-d4d3-4544-a682-867973593a0c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1anmGwBI8jQEyvKXRhiL2mpMYG3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pers/ap/sample" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pers.ap.sample.homework" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Java\sample\src\pers\ap\sample\homework2" />
+      <recent name="F:\Java\sample\src\pers\ap\sample\homework" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Field">
+    <configuration name="Barrier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.ap.sample.homework.Barrier" />
+      <module name="sample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.ap.sample.homework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Field" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.ap.sample.homework.Field" />
+      <module name="sample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.ap.sample.homework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LockProcess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.ap.sample.homework.LockProcess" />
+      <module name="sample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.ap.sample.homework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SemaphoreMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.ap.sample.homework.SemaphoreMain" />
+      <module name="sample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.ap.sample.homework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TcpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.ap.sample.tcp.TcpClient" />
+      <module name="sample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.ap.sample.tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TcpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.ap.sample.tcp.TcpServer" />
+      <module name="sample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.ap.sample.tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Field" />
+        <item itemvalue="Application.TcpClient" />
+        <item itemvalue="Application.TcpServer" />
+        <item itemvalue="Application.Barrier" />
+        <item itemvalue="Application.LockProcess" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8442465a-d4d3-4544-a682-867973593a0c" name="Default Changelist" comment="" />
+      <created>1587379639753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587379639753</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="476" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1588254525701">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="476" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1588254525701" />
+    <state x="548" y="302" width="439" height="239" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587909118140">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="548" y="302" width="439" height="239" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.834@0.0.1536.834" timestamp="1587909118140" />
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1587390303327">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1587390303327" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1587984584083">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1587984584083" />
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1588309325806">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588309325806" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1588309325806">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588309325806" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1588309325806">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588309325806" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1588309325806">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588309325806" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1588309325806">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588309325806" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1588309325806">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1588309325806" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1588309325806">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1588309325806" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1588309325806">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1588309325806" />
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1588402783598">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588402783598" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1588251921772">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1588251921772" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pers/ap/sample/homework/Latch_SingleWordRunThread.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
