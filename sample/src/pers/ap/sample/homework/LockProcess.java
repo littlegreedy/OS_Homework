@@ -36,7 +36,7 @@ public class LockProcess {
         }
 
     }
-    public static void printStringWord(){
+    public static void printStringWord(String[] input){
         Storage storage=new Storage();
         LockProcess lockProcess=new LockProcess(storage);
         int cnt=3;
@@ -57,9 +57,9 @@ public class LockProcess {
             });
             singleWord[i].start();
         }
-        singleWord[0].setName("nihao");
-        singleWord[1].setName("buhao");
-        singleWord[2].setName("keyi");
+        singleWord[0].setName(input[0]);
+        singleWord[1].setName(input[1]);
+        singleWord[2].setName(input[2]);
     }
 
 }

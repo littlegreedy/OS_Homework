@@ -17,12 +17,18 @@ import java.util.Map;
 
 class TextT{
     static Label textField=new Label();
+    static TextField[] inpuTextField= {new TextField(),new TextField(),new TextField()};
+    static String[] getStrings=new String[3];
      volatile static Text[] texts=new Text[4];
      static {
          textField.setWrapText(false);
          textField.setAlignment(Pos.CENTER);
          textField.setMaxWidth(80);
          textField.setMinWidth(80);
+
+         for(int i=0;i<3;i++){
+             inpuTextField[i].setPrefSize(150, 50);
+         }
 
          for (int i=0;i<4;i++) {
              texts[i] = new Text("____");
@@ -71,8 +77,13 @@ public class Player {
          */
         HBox hB0=new HBox(20);
         hB0.setAlignment(Pos.CENTER);
-        hB0.setPrefHeight(80);
-        hB0.getChildren().addAll(TextT.textField,sl,bu_start,bu_clear);
+        hB0.setPrefHeight(120);
+        hB0.getChildren().addAll(TextT.inpuTextField[0],TextT.inpuTextField[1],TextT.inpuTextField[2]);
+
+        HBox hB1=new HBox(20);
+        hB1.setAlignment(Pos.CENTER);
+        hB1.setPrefHeight(80);
+        hB1.getChildren().addAll(TextT.textField,sl,bu_start,bu_clear);
 
 
 //        VBox vB=new VBox();
@@ -81,20 +92,26 @@ public class Player {
 //        vB.getChildren().addAll(sl);
 
 
-        HBox hB1=new HBox(50);
-        hB1.setAlignment(Pos.CENTER);
-        hB1.setPrefHeight(180);
-        hB1.getChildren().addAll(TextT.texts[0],TextT.texts[1], TextT.texts[2]);
-
-        HBox hB2=new HBox();
+        HBox hB2=new HBox(50);
         hB2.setAlignment(Pos.CENTER);
-        hB2.setPrefHeight(180);
-        hB2.getChildren().add(TextT.texts[3]);
+        hB2.setPrefHeight(140);
+        hB2.getChildren().addAll(TextT.texts[0],TextT.texts[1], TextT.texts[2]);
+
+        HBox hB3=new HBox();
+        hB3.setAlignment(Pos.CENTER);
+        hB3.setPrefHeight(140);
+        hB3.getChildren().add(TextT.texts[3]);
+
+
+        //把输出结果放到另一个面板中
+        BorderPane outputBP=new BorderPane();
+        outputBP.setCenter(hB2);
+        outputBP.setBottom(hB3);
 
         BorderPane rootBP = new BorderPane();
         rootBP.setTop(hB0);
         rootBP.setCenter(hB1);
-        rootBP.setBottom(hB2);
+        rootBP.setBottom(outputBP);
 
         rootBP.setBackground(new Background(new BackgroundFill(Color.color(0.5, 0.5, 0.5, 0.1),
                 new CornerRadii(0.2), null)));//Color.valueOf("#696961")
@@ -106,18 +123,27 @@ public class Player {
         });
         bu_start.setOnAction(e->{
             bu_start.setDisable(true);
-            switch (index){
-                case 0:   new WNMain().vm();
-                            break;
-                case 1:   new LatchMain().la();
-                            break;
-                case 2:   new SemaphoreMain().se();
-                            break;
-                case 3:    LockProcess.printStringWord();
-                            break;
-                case 4:     Barrier.ba();   break;
 
-                case 5:    PhaserProcess.ph();   break;
+            //读取文本框内容
+            for(int i=0;i<TextT.inpuTextField.length;i++) {
+                obj.put(i+6, TextT.inpuTextField[i].getText());
+                TextT.getStrings[i]=obj.get(new Integer(i+6));
+//            	TextT.getStrings[i]=TextT.inpuTextField[i].getText();
+                TextT.inpuTextField[i].setEditable(false);
+            }
+
+            switch (index){
+                case 0:   new WNMain().vm(TextT.getStrings);
+                            break;
+                case 1:   new LatchMain().la(TextT.getStrings);
+                            break;
+                case 2:   new SemaphoreMain().se(TextT.getStrings);
+                            break;
+                case 3:    LockProcess.printStringWord(TextT.getStrings);
+                            break;
+                case 4:     Barrier.ba(TextT.getStrings);   break;
+
+                case 5:    PhaserProcess.ph(TextT.getStrings);   break;
 
                 default: System.out.println("mistake");
             }
@@ -126,6 +152,12 @@ public class Player {
        });
 
         bu_clear.setOnAction(e->{
+
+            for(int i=0;i<TextT.inpuTextField.length;i++) {
+                TextT.inpuTextField[i].setText("");
+                TextT.inpuTextField[i].setEditable(true);
+            }
+
             for (int i=0;i<TextT.texts.length;i++)
                 TextT.texts[i].setText("____");
             bu_start.setDisable(false);

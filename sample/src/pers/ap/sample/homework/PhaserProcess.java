@@ -6,14 +6,14 @@ public class PhaserProcess {
     public static void main(String[] args){
 
     }
-    public static void ph(){
+    public static void ph(String[] input){
         int cnt=3;
         Storage storage=new Storage();
         Phaser phaser=new Phaser(cnt);
 
-        new Thread(new PrintWord(phaser,"nihao",storage)).start();
-        new Thread(new PrintWord(phaser,"buhao",storage)).start();
-        new Thread(new PrintWord(phaser,"keyi",storage)).start();
+        new Thread(new PrintWord(phaser,input[0],storage)).start();
+        new Thread(new PrintWord(phaser,input[1],storage)).start();
+        new Thread(new PrintWord(phaser,input[2],storage)).start();
     }
 
 }

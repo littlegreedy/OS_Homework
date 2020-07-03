@@ -5,19 +5,19 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 public class Barrier {
-    public static void main(String[] args){
-        ba();
-    }
+//    public static void main(String[] args){
+//        ba();
+//    }
 
-    public static void ba(){
+    public static void ba(String[] input){
         Storage storage=new Storage();
         PrintResult finalPrint=new PrintResult();
         CyclicBarrier barrier=new CyclicBarrier(3,finalPrint);
 //        CalculateFinalResult
 
-        PrintString printString=new PrintString(barrier,"nihao", storage);
-        PrintString printString2=new PrintString(barrier,"buhao", storage);
-        PrintString printString3=new PrintString(barrier,"keyi", storage);
+        PrintString printString=new PrintString(barrier,input[0], storage);
+        PrintString printString2=new PrintString(barrier,input[1], storage);
+        PrintString printString3=new PrintString(barrier,input[2], storage);
 
         new Thread(printString).start();
         new Thread(printString2).start();
