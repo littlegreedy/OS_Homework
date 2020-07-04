@@ -27,7 +27,7 @@ class TextT{
          textField.setMinWidth(80);
 
          for(int i=0;i<3;i++){
-             inpuTextField[i].setPrefSize(150, 50);
+             inpuTextField[i].setPrefSize(120, 50);
          }
 
          for (int i=0;i<4;i++) {
@@ -75,9 +75,9 @@ public class Player {
         /**
          * 根布局
          */
-        HBox hB0=new HBox(20);
+        HBox hB0=new HBox(50);
         hB0.setAlignment(Pos.CENTER);
-        hB0.setPrefHeight(120);
+        hB0.setPrefHeight(180);
         hB0.getChildren().addAll(TextT.inpuTextField[0],TextT.inpuTextField[1],TextT.inpuTextField[2]);
 
         HBox hB1=new HBox(20);
@@ -122,7 +122,11 @@ public class Player {
             TextT.textField.setText(obj.get(new Integer(index)));
         });
         bu_start.setOnAction(e->{
+            for (int i=0;i<TextT.texts.length;i++)
+                TextT.texts[i].setText("____");
+
             bu_start.setDisable(true);
+            bu_clear.setDisable(true);
 
             //读取文本框内容
             for(int i=0;i<TextT.inpuTextField.length;i++) {

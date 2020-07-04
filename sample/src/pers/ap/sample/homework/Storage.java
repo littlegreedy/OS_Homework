@@ -19,7 +19,12 @@ class Storage {
 				System.out.print(products[i]+" ");
 				s.append(products[i]).append(" ");
 			}
-				TextT.texts[top].setText(s.toString());
+			TextT.texts[top].setText(s.toString());
+			for(int i=0;i<TextT.inpuTextField.length;i++) {
+				TextT.inpuTextField[i].setEditable(true);
+			}
+			Player.bu_start.setDisable(false);
+			Player.bu_clear.setDisable(false);
 		}
 	}
 
