@@ -15,9 +15,9 @@ public class Barrier {
         CyclicBarrier barrier=new CyclicBarrier(3,finalPrint);
 //        CalculateFinalResult
 
-        PrintString printString=new PrintString(barrier,input[0], storage);
-        PrintString printString2=new PrintString(barrier,input[1], storage);
-        PrintString printString3=new PrintString(barrier,input[2], storage);
+        PrintString printString=new PrintString(barrier,input[0], 0,storage);
+        PrintString printString2=new PrintString(barrier,input[1], 1,storage);
+        PrintString printString3=new PrintString(barrier,input[2], 2,storage);
 
         new Thread(printString).start();
         new Thread(printString2).start();
@@ -35,23 +35,26 @@ class PrintResult implements Runnable{
 class PrintString implements Runnable {
     final CyclicBarrier barrier;
     final String str;
+    private final int index;
     Storage storage;
 
-    PrintString(CyclicBarrier barrier, String str,Storage storage) {
+    public PrintString(CyclicBarrier barrier, String str, int index, Storage storage) {
         this.barrier = barrier;
         this.str = str;
-        this.storage=storage;
+        this.index = index;
+        this.storage = storage;
     }
 
     @Override
     public void run() {
         try {
-            Thread.sleep(1000);
+
+            int waitOfTime=(int)(Math.random()*(5-1)+1);
+            Thread.sleep(waitOfTime*1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("1");
-        storage.push(str);
+        storage.push(str,index);
         try {
             barrier.await();
 

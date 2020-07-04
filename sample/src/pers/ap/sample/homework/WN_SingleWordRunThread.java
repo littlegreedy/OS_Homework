@@ -6,18 +6,20 @@ import java.util.logging.Logger;
 
 public class WN_SingleWordRunThread implements Runnable {
     private String word;
+    private final int index;
     private Storage storage;
     private Object com;
 
-    public WN_SingleWordRunThread(String word, Storage storage, Object com) {
+
+    public WN_SingleWordRunThread(String word, int index, Storage storage, Object com) {
         this.word = word;
+        this.index = index;
         this.storage = storage;
         this.com = com;
     }
 
     @Override
     public void run() {
-
         try {
             synchronized (com){
                 com.wait();
@@ -26,12 +28,13 @@ public class WN_SingleWordRunThread implements Runnable {
             e.printStackTrace();
         }
 //        System.out.println(word);
-        storage.push(word);
-//        try {
-//            Thread.sleep(1*1000);
-//        }catch (InterruptedException e){
-//            Logger.getLogger(SemaphoreMain.class.getName()).log(Level.SEVERE,null,e);
-//        }
+        try {
+            int waitOfTime=(int)(Math.random()*(5-1)+1);
+            Thread.sleep(waitOfTime*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        storage.push(word,index);
 
         synchronized (com){
             com.notify();

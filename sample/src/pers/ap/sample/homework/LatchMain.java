@@ -15,9 +15,9 @@ public class LatchMain {
         CountDownLatch doneSignal=new CountDownLatch(cnt);
         Storage storage=new Storage();
 
-        Thread thread2=new Thread(new Latch_SingleWordRunThread(doneSignal,input[0],storage));
-        Thread thread3=new Thread(new Latch_SingleWordRunThread(doneSignal,input[1],storage));
-        Thread thread4=new Thread(new Latch_SingleWordRunThread(doneSignal,input[2],storage));
+        Thread thread2=new Thread(new Latch_SingleWordRunThread(doneSignal,input[0],0,storage));
+        Thread thread3=new Thread(new Latch_SingleWordRunThread(doneSignal,input[1],1,storage));
+        Thread thread4=new Thread(new Latch_SingleWordRunThread(doneSignal,input[2],2,storage));
 
         thread2.start();
         thread3.start();

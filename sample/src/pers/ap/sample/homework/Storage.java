@@ -6,19 +6,12 @@ class Storage {
 	private String[] products = new String[3];
 	private int top = 0;
 
-	public synchronized void push(String product) {
-		try {
-			Thread.sleep(2*1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	public synchronized void push(String product,int index) {
 
-		products[top] = product;
-		TextT.texts[top].setText(product);
+		products[index] = product;
+		TextT.texts[index].setText(product);
 		top++;
 		System.out.println(product);
-
-
 
 		if (top == products.length ) {
 			StringBuilder s= new StringBuilder();
